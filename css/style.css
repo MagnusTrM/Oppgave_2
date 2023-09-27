@@ -1,0 +1,175 @@
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+
+}
+
+.nav_links{
+	list-style: none;
+}
+
+.nav_links li{
+	display: inline-block;
+	padding: 0px 10px;
+}
+
+
+.section_2links{
+	display: flex;
+	flex-direction: row;
+	margin: 10px 10px 0px 10px;
+}
+
+.youtube_image{
+	width: 100%;
+}
+
+.youtube_box{
+	margin-right: 10px ;
+	border: solid 1px black;
+	border-radius: 10px;
+}
+.youtube_box:nth-child(2){
+	margin: 0;
+}
+
+
+
+.wrapper_grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
+	margin: 10px;
+  }
+
+  .grid{
+	border-radius: 10px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+.image1{
+	width: 100%;
+	object-fit: cover;
+
+}
+
+.grid_1_4{
+	grid-column: 1/3;
+	grid-row: 1/3 ;
+	background-color: aliceblue;
+}
+
+h4{
+	padding: 10px	;
+}
+
+.grid_2_4{
+	grid-column: 3/5;
+	grid-row:1/3;
+	background-color: navajowhite	;
+
+}
+
+.grid_3_4{
+	grid-column: 1/3;
+	grid-row: 3/5;
+	background-color: salmon;
+
+}
+
+.grid_4_4{
+	grid-column: 3/5;
+	grid-row:3/5;
+	background-color: honeydew;
+
+}
+
+.grid_1_3{
+	grid-column: 5;
+	grid-row:1;
+	background-color: seashell;
+
+}
+
+.grid_2_3{
+	grid-column: 5;
+	grid-row: 2;
+	background-color: paleturquoise;
+
+}
+
+.grid_3_3{
+	grid-column: 5;
+	grid-row:3;
+	background-color: wheat;
+
+}
+
+.grid_4_3{
+	grid-column: 5;
+	grid-row:4;
+	background-color: rgb(255, 183, 48);
+
+}
+
+
+
+
+.grid_wrapper{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
+	margin: 10px;
+}
+.a{
+	grid-column: 1;
+	grid-row:1/3;
+	background-color: rgb(255, 183, 48);
+}
+.b{
+	grid-column: 1;
+	grid-row:3/5;
+	background-color: rgb(255, 183, 48);
+
+}
+
+
+
+.c{
+	grid-column: 2;
+	grid-row:1/4;
+	background-color: rgb(255, 183, 48);
+}
+.img_g{
+	grid-column: 2;
+	grid-row: 1;
+	background-color: aqua;
+}
+.img{
+	width: 100%;
+}
+
+
+
+
+
+.d{
+	grid-column: 2;
+	grid-row:4;
+	background-color: rgb(255, 183, 48);
+}
+.e{
+	grid-column: 3;
+	grid-row:1;
+	background-color: rgb(255, 183, 48);
+}
+.f{
+	grid-column: 3;
+	grid-row:2/5;
+	background-color: rgb(255, 183, 48);
+}
