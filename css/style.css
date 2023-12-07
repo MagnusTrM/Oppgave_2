@@ -1,9 +1,40 @@
+
+.sidenav {
+	height: 100%;
+	width: 250px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #ffffff;
+	overflow-x: hidden;
+	padding-top: 20px;
+	border-right: 1px solid black;
+  }
+  
+  .sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+  }
+
+  .sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+  }
+
+
 header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 30px 10%;
-
+	padding-left: 200px;
 }
 
 .nav_links{
@@ -16,75 +47,58 @@ header{
 }
 
 
-.section_2links{
+.margen-left{
+	margin-left: 250px;
+}
+
+.flex{
 	display: flex;
-	flex-direction: row;
-	margin: 10px 10px 0px 10px;
+	gap: 10px;
+	margin: 10px;
 }
-
-.youtube_image{
-	width: 100%;
-}
-
-.youtube_box{
-	margin-right: 10px ;
-	border: solid 1px black;
-	border-radius: 10px;
-}
-.youtube_box:nth-child(2){
-	margin: 0;
-}
-
-
 
 .wrapper_grid {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
+	grid-auto-rows: minmax( auto);
 	gap: 10px;
-	grid-auto-rows: minmax(100px, auto);
 	margin: 10px;
-  }
 
-  .grid{
+}
+
+.grid{
 	border-radius: 10px;
 	border: 1px solid black;
 	text-align: center;
+	width: 100%;
 }
 
-.image1{
+.image{
 	width: 100%;
-	object-fit: cover;
+	object-fit: fill;
 
 }
 
 .grid_1_4{
 	grid-column: 1/3;
 	grid-row: 1/3 ;
-	background-color: aliceblue;
-}
-
-h4{
-	padding: 10px	;
 }
 
 .grid_2_4{
 	grid-column: 3/5;
 	grid-row:1/3;
-	background-color: navajowhite	;
 
 }
 
 .grid_3_4{
 	grid-column: 1/3;
 	grid-row: 3/5;
-	background-color: salmon;
 
 }
 
 .grid_4_4{
 	grid-column: 3/5;
 	grid-row:3/5;
-	background-color: honeydew;
 
 }
 
@@ -114,62 +128,4 @@ h4{
 	grid-row:4;
 	background-color: rgb(255, 183, 48);
 
-}
-
-
-
-
-.grid_wrapper{
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 10px;
-	grid-auto-rows: minmax(100px, auto);
-	margin: 10px;
-}
-.a{
-	grid-column: 1;
-	grid-row:1/3;
-	background-color: rgb(255, 183, 48);
-}
-.b{
-	grid-column: 1;
-	grid-row:3/5;
-	background-color: rgb(255, 183, 48);
-
-}
-
-
-
-.c{
-	grid-column: 2;
-	grid-row:1/4;
-	background-color: rgb(255, 183, 48);
-}
-.img_g{
-	grid-column: 2;
-	grid-row: 1;
-	background-color: aqua;
-}
-.img{
-	width: 100%;
-}
-
-
-
-
-
-.d{
-	grid-column: 2;
-	grid-row:4;
-	background-color: rgb(255, 183, 48);
-}
-.e{
-	grid-column: 3;
-	grid-row:1;
-	background-color: rgb(255, 183, 48);
-}
-.f{
-	grid-column: 3;
-	grid-row:2/5;
-	background-color: rgb(255, 183, 48);
 }
